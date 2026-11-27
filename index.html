@@ -140,7 +140,7 @@ footer a { color: var(--text2); }
 .tool.tp { grid-column: 1 / -1; flex-direction: row; }
 .tool.tp .pic.art { flex: 0 0 34%; aspect-ratio: auto; min-height: 210px; border-bottom: 0; border-right: 1px solid var(--line); }
 .tool.tp .pic.art svg { width: 30%; max-width: 110px; }
-@media (max-width: 820px) { .tool.tp { flex-direction: column; } .tool.tp .pic.art { flex: none; aspect-ratio: 16 / 7; min-height: 0; border-right: 0; border-bottom: 1px solid var(--line); } }
+@media (max-width: 820px) { .tool .pic.phones img { width: 40%; } .tool.tp { flex-direction: column; } .tool.tp .pic.art { flex: none; aspect-ratio: 16 / 9; min-height: 0; border-right: 0; border-bottom: 1px solid var(--line); } }
 .tool { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; display: flex; flex-direction: column; }
 .tool .pic { display: block; aspect-ratio: 16 / 10; overflow: hidden; border-bottom: 1px solid var(--line); background: #000; }
 .tool .pic img { width: 100%; height: 100%; object-fit: cover; object-position: top left; transition: transform .4s ease; }
@@ -163,7 +163,8 @@ footer a { color: var(--text2); }
 .steps a, .point a { color: var(--text); }
 
 .tool .pic.phones { display: flex; justify-content: center; align-items: flex-start; gap: 12px; padding: 18px 14px 0; overflow: hidden; }
-.tool .pic.phones img { width: 42%; height: auto; aspect-ratio: 600 / 880; object-fit: cover; object-position: top; border-radius: 12px 12px 0 0;
+.tool .pic.phones { align-items: stretch; }
+.tool .pic.phones img { width: 44%; height: auto; align-self: stretch; object-fit: cover; object-position: top; border-radius: 12px 12px 0 0;
   border: 1px solid #2f3742; border-bottom: 0; box-shadow: 0 10px 30px rgba(0,0,0,.45); transition: transform .4s ease; }
 .tool:hover .pic.phones img { transform: translateY(-3px); }
 
