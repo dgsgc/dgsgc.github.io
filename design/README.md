@@ -6,7 +6,7 @@ work without the internet), so change it here first and then copy it on.
 
 - **Dark** everywhere; the planner also has the light version when the computer is in light mode.
   The monitor's screens stay dark, with their red Night mode.
-- **Each tool has its own colour:** the monitor green `#4fb06d`, the planner teal `#3bb3a1`, and Tracker Pilot blue `#5b8ff0` (the blue its own phone page already uses). It's used for
+- **Each tool has its own colour:** the monitor green `#4fb06d`, the planner teal `#3bb3a1`, and Star Tracker Controller blue `#5b8ff0` (the blue its own phone page already uses). It's used for
   the tool's icon, its title, its main buttons and focus rings. Everything else is neutral.
 - **Guiding levels** (OK, warn, alert, RA, Dec) are the same on the web page, the morning report
   and the ESP32 display.
@@ -30,10 +30,10 @@ ASIAIR Mosaic Planner, two overlapping frames:
 <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="6" width="14" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="2.6"/><rect x="14" y="15" width="14" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="2.6"/></svg>
 ```
 
-Tracker Pilot, a circular arrow round a star:
+Star Tracker Controller, a camera with a star:
 
 ```html
-<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M27 16a11 11 0 1 1-4.2-8.6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M23.5 2.5l-.6 5.3 5.2.9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 11.5l1.3 3.2 3.2 1.3-3.2 1.3-1.3 3.2-1.3-3.2-3.2-1.3 3.2-1.3z" fill="currentColor"/></svg>
+<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="12" width="20" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="19" r="4" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12l2-3h6l2 3" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 2.2l1.06 2.74 2.74 1.06-2.74 1.06-1.06 2.74-1.06-2.74-2.74-1.06 2.74-1.06z" fill="currentColor"/></svg>
 ```
 
 Set `color` to the tool's colour (`color: var(--accent)`). The Mac app icons stay as they are.
