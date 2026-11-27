@@ -209,6 +209,8 @@ header .brand b { display: block; font-size: 32px; line-height: 1.05; letter-spa
 header .brand small { display: block; font-size: 15px; font-weight: 600; letter-spacing: .08em; color: var(--text2); margin-top: 6px; }
 header { padding: 26px 0 30px; }
 @media (max-width: 520px) { header .brand { gap: 12px; } header .brand svg { width: 42px; height: 42px; } header .brand b { font-size: 24px; } header .brand small { font-size: 13px; } }
+footer .foot-brand { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 6px; font-weight: 600; font-size: 17px; color: #c9d1ff; text-decoration: none; }
+footer .foot-brand svg { width: 30px; height: 30px; flex: none; }
 /* Phone menu */
 .menu-btn { display: none; }
 .menu-btn .x { display: none; }
@@ -299,6 +301,7 @@ header { padding: 26px 0 30px; }
 
 <footer>
   <div class="wrap">
+    <a class="foot-brand" href="#"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 24L14 9L26 20" fill="none" stroke="#c9d1ff" stroke-width="1.6" stroke-opacity=".55"/><circle cx="14" cy="9" r="6.2" fill="none" stroke="#4fb06d" stroke-width="1.6"/><path d="M14 1v3.2M14 13.8V17M6 9h3.2M18.8 9H22" stroke="#4fb06d" stroke-width="1.6"/><circle cx="6" cy="24" r="3.2" fill="#3bb3a1"/><circle cx="14" cy="9" r="2.4" fill="#c9d1ff"/><circle cx="26" cy="20" r="3.2" fill="#5b8ff0"/></svg>Astro imaging tools</a>
     <p>Free, with the source on GitHub. These tools aren't made by or connected with ZWO or the N.I.N.A. and PHD2 projects.</p>
     <p><a href="https://github.com/dgsgc/astro-rig-monitor">Astro Rig Monitor on GitHub</a> · <a href="https://github.com/dgsgc/asiair-mosaic-planner">ASIAIR Mosaic Planner on GitHub</a> · <a href="https://github.com/dgsgc/star-tracker-controller">Star Tracker Controller on GitHub</a></p>
   </div>
