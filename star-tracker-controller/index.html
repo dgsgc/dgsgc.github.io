@@ -164,7 +164,7 @@ table.spec { width: 100%; border-collapse: collapse; font-size: 16px; margin-top
 <header>
   <div class="wrap">
     <a class="brand" href="#"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="12" width="20" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="19" r="4" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12l2-3h6l2 3" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 2.2l1.06 2.74 2.74 1.06-2.74 1.06-1.06 2.74-1.06-2.74-2.74-1.06 2.74-1.06z" fill="currentColor"/></svg>Star Tracker Controller</a>
-    <nav><a href="#why">Why</a><a href="#works">Works with</a><a href="#start">Getting started</a><a href="https://dgsgc.github.io/">More tools</a><a href="https://github.com/dgsgc/tracker-pilot">GitHub</a></nav>
+    <nav><a href="#why">Why</a><a href="#works">Works with</a><a href="#start">Getting started</a><a href="https://dgsgc.github.io/">More tools</a><a href="https://github.com/dgsgc/star-tracker-controller">GitHub</a></nav>
   </div>
 </header>
 
@@ -174,7 +174,7 @@ table.spec { width: 100%; border-collapse: collapse; font-size: 16px; margin-top
   <p class="lead">A small Raspberry Pi at the mount runs your camera, dithers between frames through the tracker's ST-4 port, plate-solves for polar alignment, and points you at each panel of a mosaic. You run it from your phone. No laptop in the field.</p>
   <div class="dl">
     <a class="btn primary" href="#start">Get started</a>
-    <a class="btn" href="https://github.com/dgsgc/tracker-pilot">See it on GitHub</a>
+    <a class="btn" href="https://github.com/dgsgc/star-tracker-controller">See it on GitHub</a>
   </div>
   <p class="small">Free and open source (MIT). About £35 of parts with a Pi Zero 2 W. An early release: built from a working rig, and reports from other mounts and cameras are welcome.</p>
   <div class="diagram"><svg viewBox="0 0 900 300" role="img" aria-label="Your phone talks to a Raspberry Pi over WiFi; the Pi drives the tracker through its ST-4 port and the camera over USB, with an optional DEC motor">
@@ -224,8 +224,8 @@ table.spec { width: 100%; border-collapse: collapse; font-size: 16px; margin-top
     <h2>What it works with</h2>
     <table class="spec">
       <tr><td>Mounts</td><td>Any tracker with an ST-4 guide port: Sky-Watcher Star Adventurer 2i and GTi, iOptron SkyGuider Pro and similar.</td></tr>
-      <tr><td>Cameras</td><td>Canon EOS bodies from about 2008 on, over USB: with the dial on <b>B</b> (60D, 70D, 80D, 90D, 7D, 6D, 5D Mark II and later, and the like), or on <b>M</b> for bodies without a B position (Rebel-line models such as the 600D, 700D and 800D, the 77D, the M series and R bodies without B), where Star Tracker Controller sets the Bulb shutter speed itself. Other makes (Nikon, Sony and more) can be added, because the camera library underneath already supports them: see the <a href="https://github.com/dgsgc/tracker-pilot/blob/main/docs/cameras.md">camera research notes</a>.</td></tr>
-      <tr><td>Tested</td><td>EOS 60D, including focus with an STM lens. The M-dial way is new and not yet tested on a body without B: reports especially welcome. See the <a href="https://github.com/dgsgc/tracker-pilot#tested-cameras">tested cameras</a> list. Have another camera? A two-minute check on the bench tells you what works; please <a href="https://github.com/dgsgc/tracker-pilot/issues/new?template=camera-report.yml">send in a camera report</a>.</td></tr>
+      <tr><td>Cameras</td><td>Canon EOS bodies from about 2008 on, over USB: with the dial on <b>B</b> (60D, 70D, 80D, 90D, 7D, 6D, 5D Mark II and later, and the like), or on <b>M</b> for bodies without a B position (Rebel-line models such as the 600D, 700D and 800D, the 77D, the M series and R bodies without B), where Star Tracker Controller sets the Bulb shutter speed itself. Other makes (Nikon, Sony and more) can be added, because the camera library underneath already supports them: see the <a href="https://github.com/dgsgc/star-tracker-controller/blob/main/docs/cameras.md">camera research notes</a>.</td></tr>
+      <tr><td>Tested</td><td>EOS 60D, including focus with an STM lens. The M-dial way is new and not yet tested on a body without B: reports especially welcome. See the <a href="https://github.com/dgsgc/star-tracker-controller#tested-cameras">tested cameras</a> list. Have another camera? A two-minute check on the bench tells you what works; please <a href="https://github.com/dgsgc/star-tracker-controller/issues/new?template=camera-report.yml">send in a camera report</a>.</td></tr>
       <tr><td>Lenses</td><td>For plate solving, about 24–85 mm on APS-C or 35–135 mm on full frame.</td></tr>
       <tr><td>Computer</td><td>Raspberry Pi Zero 2 W, or a Pi 3, 4 or 5, on Raspberry Pi OS Lite.</td></tr>
     </table>
@@ -242,14 +242,18 @@ table.spec { width: 100%; border-collapse: collapse; font-size: 16px; margin-top
   <div class="wrap">
     <h2>Getting started</h2>
     <ol class="steps">
-      <li><h3>Make the ST-4 lead</h3><p>Two PC817 optocouplers and resistors between the Pi and an ST-4 cable, so the Pi and the mount share nothing electrically. <a href="https://github.com/dgsgc/tracker-pilot/blob/main/docs/hardware.md">Parts list and wiring</a>.</p></li>
+      <li><h3>Make the ST-4 lead</h3><p>Two PC817 optocouplers and resistors between the Pi and an ST-4 cable, so the Pi and the mount share nothing electrically. <a href="https://github.com/dgsgc/star-tracker-controller/blob/main/docs/hardware.md">Parts list and wiring</a>.</p></li>
       <li><h3>Install it on the Pi</h3><p>Put Raspberry Pi OS Lite (64-bit) on a card with your home WiFi and SSH, then run the one-line installer below.</p></li>
       <li><h3>Set it up from your phone</h3><p>Open <b>http://tracker.local</b> (your Pi's name) and enter the focal length, the camera's pixel size and width, the guide rate, the DEC drive and your location.</p></li>
       <li><h3>First night</h3><p>Camera dial on <b>B</b> (or <b>M</b> if it has no B), lens on <b>MF</b>. Polar align with the Polar alignment card, focus, then press <b>Start</b>, or load a mosaic.</p></li>
     </ol>
-    <div class="cmd"><pre><code id="cmd">curl -fsSL https://raw.githubusercontent.com/dgsgc/tracker-pilot/main/install.sh | sh</code></pre><button class="copy" type="button" id="copy">Copy</button></div>
-    <p class="small" style="margin-top:22px">Before the first night, check your camera on the bench: with Star Tracker Controller stopped, run <code>~/tracker-pilot/venv/bin/python ~/tracker-pilot/tools/camera_check.py</code> on the Pi. It tells you what works, ready to paste into a <a href="https://github.com/dgsgc/tracker-pilot/issues/new?template=camera-report.yml">camera report</a>.</p>
-    <p class="small">Running the installer again updates it and keeps your settings. Want to try it first? It has a simulator with a fake camera, mount and stars: see <a href="https://github.com/dgsgc/tracker-pilot#try-it-without-hardware">Try it without hardware</a>.</p>
+    <div class="cmd"><pre><code id="cmd">curl -fsSL https://raw.githubusercontent.com/dgsgc/star-tracker-controller/main/install.sh | sh</code></pre><button class="copy" type="button" id="copy">Copy</button></div>
+    <p class="small" style="margin-top:22px">Before the first night, check your camera on the bench. On the Pi, run these three lines (the first pauses Star Tracker Controller, the last starts it again):</p>
+    <pre><code>sudo systemctl stop star-tracker-controller
+~/star-tracker-controller/venv/bin/python ~/star-tracker-controller/tools/camera_check.py
+sudo systemctl start star-tracker-controller</code></pre>
+    <p class="small">It tells you what works, ready to paste into a <a href="https://github.com/dgsgc/star-tracker-controller/issues/new?template=camera-report.yml">camera report</a>. On a camera that isn't a Canon, add <code>--try-bulb</code> to the middle line to try one real 2-second exposure.</p>
+    <p class="small">Running the installer again updates it and keeps your settings. Want to try it first? It has a simulator with a fake camera, mount and stars: see <a href="https://github.com/dgsgc/star-tracker-controller#try-it-without-hardware">Try it without hardware</a>.</p>
   </div>
 </section>
 </main>
@@ -258,7 +262,7 @@ table.spec { width: 100%; border-collapse: collapse; font-size: 16px; margin-top
   <div class="wrap">
     <p>Star Tracker Controller is free and open source (MIT). It isn't affiliated with Sky-Watcher, iOptron or Canon; their names only say what it works with. Plate solving by cedar-solve; star data from the Hipparcos catalogue (ESA).</p>
     <p>Also from the same set: <a href="https://dgsgc.github.io/astro-rig-monitor/">Astro Rig Monitor</a> and <a href="https://dgsgc.github.io/asiair-mosaic-planner/">ASIAIR Mosaic Planner</a>. <a href="https://dgsgc.github.io/">All the tools</a></p>
-    <p><a href="https://github.com/dgsgc/tracker-pilot">Source on GitHub</a> · <a href="https://github.com/dgsgc/tracker-pilot/blob/main/docs/hardware.md">Hardware</a> · <a href="https://github.com/dgsgc/tracker-pilot/issues">Questions and problems</a></p>
+    <p><a href="https://github.com/dgsgc/star-tracker-controller">Source on GitHub</a> · <a href="https://github.com/dgsgc/star-tracker-controller/blob/main/docs/hardware.md">Hardware</a> · <a href="https://github.com/dgsgc/star-tracker-controller/issues">Questions and problems</a></p>
   </div>
 </footer>
 
