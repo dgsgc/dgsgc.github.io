@@ -224,7 +224,8 @@ table.spec { width: 100%; border-collapse: collapse; font-size: 16px; margin-top
     <h2>What it works with</h2>
     <table class="spec">
       <tr><td>Mounts</td><td>Any tracker with an ST-4 guide port: Sky-Watcher Star Adventurer 2i and GTi, iOptron SkyGuider Pro and similar.</td></tr>
-      <tr><td>Cameras</td><td>Canon EOS bodies with a <b>B</b> position on the mode dial, from about 2008 on (60D, 550D–850D, 6D, 7D, 80D, 90D and the like), over USB. Developed on an EOS 60D; a quick camera check on the bench confirms yours before a night out. Other makes (Nikon, Sony and more) can be added: the camera library underneath already supports them.</td></tr>
+      <tr><td>Cameras</td><td>Canon EOS bodies with a <b>B</b> position on the mode dial, from about 2008 on (60D, 70D, 80D, 90D, 7D, 6D, 5D Mark II and later, and the like), over USB. Bodies with no B on the dial (most Rebel-line models such as the 600D and 700D, the 77D and the M series) aren't supported yet; a small change for them is planned. Other makes (Nikon, Sony and more) can be added, because the camera library underneath already supports them: see the <a href="https://github.com/dgsgc/tracker-pilot/blob/main/docs/cameras.md">camera research notes</a>.</td></tr>
+      <tr><td>Tested</td><td>EOS 60D, including focus with an STM lens. See the <a href="https://github.com/dgsgc/tracker-pilot#tested-cameras">tested cameras</a> list. Have another camera? A two-minute check on the bench tells you what works; please <a href="https://github.com/dgsgc/tracker-pilot/issues/new?template=camera-report.yml">send in a camera report</a>.</td></tr>
       <tr><td>Lenses</td><td>For plate solving, about 24–85 mm on APS-C or 35–135 mm on full frame.</td></tr>
       <tr><td>Computer</td><td>Raspberry Pi Zero 2 W, or a Pi 3, 4 or 5, on Raspberry Pi OS Lite.</td></tr>
     </table>
@@ -247,7 +248,8 @@ table.spec { width: 100%; border-collapse: collapse; font-size: 16px; margin-top
       <li><h3>First night</h3><p>Camera on <b>B</b>, lens on <b>MF</b>. Polar align with the Polar alignment card, focus, then press <b>Start</b>, or load a mosaic.</p></li>
     </ol>
     <div class="cmd"><pre><code id="cmd">curl -fsSL https://raw.githubusercontent.com/dgsgc/tracker-pilot/main/install.sh | sh</code></pre><button class="copy" type="button" id="copy">Copy</button></div>
-    <p class="small" style="margin-top:22px">Running the installer again updates it and keeps your settings. Want to try it first? It has a simulator with a fake camera, mount and stars: see <a href="https://github.com/dgsgc/tracker-pilot#try-it-without-hardware">Try it without hardware</a>.</p>
+    <p class="small" style="margin-top:22px">Before the first night, check your camera on the bench: with Tracker Pilot stopped, run <code>~/tracker-pilot/venv/bin/python ~/tracker-pilot/tools/camera_check.py</code> on the Pi. It tells you what works, ready to paste into a <a href="https://github.com/dgsgc/tracker-pilot/issues/new?template=camera-report.yml">camera report</a>.</p>
+    <p class="small">Running the installer again updates it and keeps your settings. Want to try it first? It has a simulator with a fake camera, mount and stars: see <a href="https://github.com/dgsgc/tracker-pilot#try-it-without-hardware">Try it without hardware</a>.</p>
   </div>
 </section>
 </main>
