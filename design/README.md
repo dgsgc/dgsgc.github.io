@@ -36,4 +36,10 @@ Star Tracker Controller, a camera with a star:
 <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="12" width="20" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="19" r="4" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12l2-3h6l2 3" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 2.2l1.06 2.74 2.74 1.06-2.74 1.06-1.06 2.74-1.06-2.74-2.74-1.06 2.74-1.06z" fill="currentColor"/></svg>
 ```
 
-Set `color` to the tool's colour (`color: var(--accent)`). The Mac app icons stay as they are.
+The suite home, three stars in the tools' colours with a green target on a white star (the tab icon drops the crosshair ticks):
+
+```html
+<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 24L14 9L26 20" fill="none" stroke="#c9d1ff" stroke-width="1.6" stroke-opacity=".55"/><circle cx="14" cy="9" r="6.2" fill="none" stroke="#4fb06d" stroke-width="1.6"/><path d="M14 1v3.2M14 13.8V17M6 9h3.2M18.8 9H22" stroke="#4fb06d" stroke-width="1.6"/><circle cx="6" cy="24" r="3.2" fill="#3bb3a1"/><circle cx="14" cy="9" r="2.4" fill="#c9d1ff"/><circle cx="26" cy="20" r="3.2" fill="#5b8ff0"/></svg>
+```
+
+Set `color` to the tool's colour (`color: var(--accent)`); the suite home icon keeps its own colours. The Mac app icons stay as they are.
