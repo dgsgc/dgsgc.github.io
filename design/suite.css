@@ -21,7 +21,7 @@
   --accent: var(--monitor); --on-accent: var(--on-monitor);   /* set per tool */
 
   /* guiding levels (monitor, report, ESP32) */
-  --ok: #4fb06d;    --ok-lt: #93cf9f;
+  --ok: #4fb06d;    --ok-lt: #6fcf87;
   --warn: #f0a530;  --warn-lt: #fac775;
   --alert: #e5534b; --alert-lt: #f7c1c1; --alert-bg: #4a1716;
   --idle: #3a3f47;
