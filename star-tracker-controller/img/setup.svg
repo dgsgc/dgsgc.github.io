@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 640" width="1120" height="640" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title>Star Tracker Controller: a complete rig</title>
+<rect width="100%" height="100%" fill="#0f1216"/>
+<text x="40" y="46" font-size="24" fill="#e6e9ee" font-weight="700" text-anchor="start">A complete rig</text>
+<text x="40" y="72" font-size="14" fill="#a9b2bf" font-weight="400" text-anchor="start">Everything at the mount runs from the Pi; you control it from your phone.</text>
+<rect x="60" y="120" width="300" height="170" rx="12" fill="#171b21" stroke="#2a3038" stroke-width="1.5"/>
+<text x="76" y="148" font-size="16" fill="#e6e9ee" font-weight="700" text-anchor="start">Tracker</text>
+<text x="76" y="172" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">Star Adventurer 2i/GTi, SkyGuider Pro…</text>
+<text x="76" y="190" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">ST-4 (guide) port</text>
+<text x="76" y="208" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">tracking on, polar aligned</text>
+<text x="76" y="226" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">guide rate = the app's setting</text>
+<rect x="60" y="360" width="300" height="150" rx="12" fill="#171b21" stroke="#2a3038" stroke-width="1.5"/>
+<text x="76" y="388" font-size="16" fill="#e6e9ee" font-weight="700" text-anchor="start">Camera</text>
+<text x="76" y="412" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">Canon EOS, on the tracker</text>
+<text x="76" y="430" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">dial on B (or M), lens on MF</text>
+<text x="76" y="448" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">USB port</text>
+<rect x="520" y="230" width="260" height="180" rx="12" fill="#171b21" stroke="#2a3038" stroke-width="1.5"/>
+<text x="536" y="258" font-size="16" fill="#5b8ff0" font-weight="700" text-anchor="start">Raspberry Pi</text>
+<text x="536" y="282" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">Zero 2 W, 3, 4 or 5</text>
+<text x="536" y="300" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">opto board for ST-4</text>
+<text x="536" y="318" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">Star Tracker Controller</text>
+<text x="536" y="336" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">page at http://&lt;name&gt;.local</text>
+<rect x="520" y="500" width="260" height="100" rx="12" fill="#171b21" stroke="#2a3038" stroke-width="1.5"/>
+<text x="536" y="528" font-size="16" fill="#e6e9ee" font-weight="700" text-anchor="start">Power</text>
+<text x="536" y="552" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">USB power bank, or</text>
+<text x="536" y="570" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">12 V → 5 V converter (2.5 A)</text>
+<rect x="860" y="120" width="220" height="150" rx="12" fill="#171b21" stroke="#2a3038" stroke-width="1.5"/>
+<text x="876" y="148" font-size="16" fill="#e6e9ee" font-weight="700" text-anchor="start">Phone</text>
+<text x="876" y="172" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">any browser</text>
+<text x="876" y="190" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">home WiFi, or the Pi's own</text>
+<text x="876" y="208" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">network StarTracker-XXXX</text>
+<text x="876" y="226" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">(away from home)</text>
+<rect x="860" y="360" width="220" height="130" rx="12" fill="#171b21" stroke="#2a3038" stroke-width="1.5"/>
+<text x="876" y="388" font-size="16" fill="#e6e9ee" font-weight="700" text-anchor="start">Optional</text>
+<text x="876" y="412" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">DEC stepper on the</text>
+<text x="876" y="430" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">tracker's DEC axis</text>
+<text x="876" y="448" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">(ULN2003 + 28BYJ-48)</text>
+<polyline points="360,200 440,200 440,290 520,290" fill="none" stroke="#5b8ff0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="372" y="190" font-size="12" fill="#5b8ff0" font-weight="400" text-anchor="start">ST-4 lead (RJ12)</text>
+<polyline points="360,440 440,440 440,360 520,360" fill="none" stroke="#e6e9ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="372" y="462" font-size="12" fill="#e6e9ee" font-weight="400" text-anchor="start">USB to the Pi's data port</text>
+<text x="372" y="478" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="start">(OTG lead on a Zero)</text>
+<polyline points="650,500 650,410" fill="none" stroke="#e0a050" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="660" y="462" font-size="12" fill="#e0a050" font-weight="400" text-anchor="start">5 V</text>
+<polyline points="780,290 820,290 820,195 860,195" fill="none" stroke="#a9b2bf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 6"/>
+<text x="790" y="280" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">WiFi</text>
+<polyline points="780,370 820,370 820,425 860,425" fill="none" stroke="#a9b2bf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 5"/>
+<text x="784" y="362" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="start">6 wires</text>
+</svg>
