@@ -149,6 +149,9 @@ footer a { color: var(--text2); }
 .tool.rig { border-top: 3px solid var(--ok); } .tool.rig .btn.primary { background: var(--ok); border-color: var(--ok); color: #08130c; }
 .tool.mos { border-top: 3px solid #3bb3a1; } .tool.mos .btn.primary { background: #3bb3a1; border-color: #3bb3a1; color: #04201b; }
 @media (max-width: 820px) { .tools { grid-template-columns: 1fr; } }
+.steps.three { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 820px) { .steps.three { grid-template-columns: 1fr; } }
+.steps a, .point a { color: var(--text); }
 </style>
 </head>
 <body>
@@ -186,6 +189,30 @@ footer a { color: var(--text2); }
     </article>
   </div>
 </div>
+
+<section id="night">
+  <div class="wrap">
+    <h2>How they fit into a night</h2>
+    <ol class="steps three">
+      <li><h3>Afternoon: plan</h3><p>Frame each rig's targets and mosaics on the real sky in the <a href="https://dgsgc.github.io/asiair-mosaic-planner/">Mosaic Planner</a>, add the exposures, and send the plans to the ASIAIR app.</p></li>
+      <li><h3>Night: leave them to it</h3><p><a href="https://dgsgc.github.io/astro-rig-monitor/">Astro Rig Monitor</a> watches every rig's guiding and alerts your phone only when one needs you.</p></li>
+      <li><h3>Morning: see how it went</h3><p>A one-page report for each night: every rig's guiding through the night, every alert, and why each pause happened.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What they have in common</h2>
+    <div class="points">
+      <div class="point"><h3>Made for more than one rig</h3><p>Every rig side by side, each in its own colour, instead of one app per rig and one rig at a time.</p></div>
+      <div class="point"><h3>Safe on a live session</h3><p>The monitor only listens to the guiding your rigs already broadcast. The planner never writes to an ASIAIR itself: plans go in through ZWO's own app.</p></div>
+      <div class="point"><h3>Free, with nothing to sign up for</h3><p>No accounts and no cloud service. Your settings stay on your computer, your rigs and targets in your browser or the app.</p></div>
+      <div class="point"><h3>ASIAIR and N.I.N.A.</h3><p>The monitor works with ASIAIRs and with PHD2, on its own or driven by N.I.N.A., including remote observatories. The planner is for ASIAIR rigs.</p></div>
+    </div>
+    <p class="small" style="margin-top:22px">Questions, ideas or problems: open an issue on <a href="https://github.com/dgsgc/astro-rig-monitor/issues">Astro Rig Monitor</a> or <a href="https://github.com/dgsgc/asiair-mosaic-planner/issues">ASIAIR Mosaic Planner</a> on GitHub.</p>
+  </div>
+</section>
 </main>
 
 <footer>
