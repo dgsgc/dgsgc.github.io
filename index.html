@@ -220,6 +220,10 @@ footer .flabel + .fbtns { margin-top: 10px; }
 footer a.fbtn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--text); font-size: 14px; font-weight: 500; text-decoration: none; line-height: 1.2; }
 footer a.fbtn:hover { border-color: #3a424d; background: #1d222a; }
 footer a.fbtn svg { width: 17px; height: 17px; flex: none; }
+/* same header height on every page of the suite, so the menu sits in the same place */
+header .wrap { min-height: 72px; }
+@media (min-width: 1101px) { header nav { display: flex; align-items: center; } header nav a { line-height: 28px; } }
+@media (max-width: 520px) { header .wrap { min-height: 60px; } }
 /* Phone menu */
 .menu-btn { display: none; }
 .menu-btn .x { display: none; }
