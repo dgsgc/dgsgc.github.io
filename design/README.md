@@ -6,7 +6,7 @@ work without the internet), so change it here first and then copy it on.
 
 - **Dark** everywhere; the planner also has the light version when the computer is in light mode.
   The monitor's screens stay dark, with their red Night mode.
-- **Each tool has its own green:** the monitor `#4fb06d`, the planner teal `#3bb3a1`, Tracker Pilot lime `#9cc24a`. It's used for
+- **Each tool has its own colour:** the monitor green `#4fb06d`, the planner teal `#3bb3a1`, and Tracker Pilot blue `#5b8ff0` (the blue its own phone page already uses). It's used for
   the tool's icon, its title, its main buttons and focus rings. Everything else is neutral.
 - **Guiding levels** (OK, warn, alert, RA, Dec) are the same on the web page, the morning report
   and the ESP32 display.

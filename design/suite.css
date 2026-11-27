@@ -18,7 +18,7 @@
   /* each tool's own colour: icon, title, main buttons, focus */
   --monitor: #4fb06d;  --on-monitor: #08130c;
   --planner: #3bb3a1;  --on-planner: #04201b;
-  --tracker: #9cc24a;  --on-tracker: #172006;   /* Tracker Pilot */
+  --tracker: #5b8ff0;  --on-tracker: #0b0e12;   /* Tracker Pilot (its own page's blue; #2f6fdf in light mode) */
   --accent: var(--monitor); --on-accent: var(--on-monitor);   /* set per tool */
 
   /* guiding levels (monitor, report, ESP32) */

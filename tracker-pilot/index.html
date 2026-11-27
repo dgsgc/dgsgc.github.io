@@ -7,16 +7,16 @@
 <meta name="description" content="Free Raspberry Pi controller for star trackers with an ST-4 port, run from your phone: Bulb runs, dithering, plate-solved polar alignment and mosaic push-to. No laptop at the mount.">
 <meta property="og:title" content="Tracker Pilot">
 <meta property="og:description" content="Dithering, polar alignment and mosaics for your star tracker, run from your phone.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M27 16a11 11 0 1 1-4.2-8.6' fill='none' stroke='%239cc24a' stroke-width='2.6' stroke-linecap='round'/%3E%3Cpath d='M23.5 2.5l-.6 5.3 5.2.9' fill='none' stroke='%239cc24a' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 11.5l1.3 3.2 3.2 1.3-3.2 1.3-1.3 3.2-1.3-3.2-3.2-1.3 3.2-1.3z' fill='%239cc24a'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M27 16a11 11 0 1 1-4.2-8.6' fill='none' stroke='%235b8ff0' stroke-width='2.6' stroke-linecap='round'/%3E%3Cpath d='M23.5 2.5l-.6 5.3 5.2.9' fill='none' stroke='%235b8ff0' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 11.5l1.3 3.2 3.2 1.3-3.2 1.3-1.3 3.2-1.3-3.2-3.2-1.3 3.2-1.3z' fill='%235b8ff0'/%3E%3C/svg%3E">
 <style>
 :root { color-scheme: dark;
   --bg: #0f1216; --panel: #171b21; --line: #2a3038; --text: #e6e9ee; --text2: #a9b2bf;
-  --ok: #4fb06d; --accent: #9cc24a; --warn: #e0a43a; --alert: #e25b4b; --link: #7cb8ff;
+  --ok: #4fb06d; --accent: #5b8ff0; --warn: #e0a43a; --alert: #e25b4b; --link: #7cb8ff;
   --r: 12px; --max: 1080px;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; background: var(--bg) radial-gradient(1100px 520px at 70% -120px, rgba(156,194,74,.10), transparent 70%) no-repeat; color: var(--text); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+body { margin: 0; background: var(--bg) radial-gradient(1100px 520px at 70% -120px, rgba(91,143,240,.10), transparent 70%) no-repeat; color: var(--text); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
 a { color: var(--link); }
 img { max-width: 100%; height: auto; display: block; }
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
@@ -57,7 +57,7 @@ header nav a:hover { color: var(--text); }
 .dl { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 8px; }
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 10px; font-weight: 600; font-size: 16px;
        text-decoration: none; border: 1px solid #3c434e; color: var(--text); background: #20252c; }
-.btn.primary { background: var(--accent); border-color: var(--accent); color: #172006; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #0b0e12; }
 .btn:hover { filter: brightness(1.1); }
 .btn .sub { font-weight: 400; font-size: 13px; opacity: .8; }
 
@@ -86,7 +86,7 @@ header nav a:hover { color: var(--text); }
 .steps { list-style: none; counter-reset: st; padding: 0; margin: 8px 0 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 34px; }
 .steps li { counter-increment: st; position: relative; padding-left: 46px; }
 .steps li::before { content: counter(st); position: absolute; left: 0; top: -2px; width: 32px; height: 32px; border-radius: 50%;
-  display: grid; place-items: center; font-weight: 700; font-size: 15px; color: var(--accent); background: rgba(156,194,74,.14); border: 1px solid rgba(156,194,74,.35); }
+  display: grid; place-items: center; font-weight: 700; font-size: 15px; color: var(--accent); background: rgba(91,143,240,.14); border: 1px solid rgba(91,143,240,.35); }
 .steps p { color: var(--text2); margin: 0; }
 
 /* settings pop-up */
@@ -178,16 +178,16 @@ table.spec { width: 100%; border-collapse: collapse; font-size: 16px; margin-top
   </div>
   <p class="small">Free and open source (MIT). About £35 of parts with a Pi Zero 2 W. An early release: built from a working rig, and reports from other mounts and cameras are welcome.</p>
   <div class="diagram"><svg viewBox="0 0 900 300" role="img" aria-label="Your phone talks to a Raspberry Pi over WiFi; the Pi drives the tracker through its ST-4 port and the Canon camera over USB, with an optional DEC motor">
-<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9cc24a"/></marker></defs>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5b8ff0"/></marker></defs>
 <rect x="20" y="110" width="170" height="80" rx="14" fill="#171b21" stroke="#3a4250" stroke-width="1.6"/><text x="105.0" y="146.0" text-anchor="middle">Your phone</text><text class="sub" x="105.0" y="166.0" text-anchor="middle">the page, any browser</text>
-<rect x="330" y="100" width="200" height="100" rx="14" fill="#171b21" stroke="#9cc24a" stroke-width="1.6"/><text x="430.0" y="146.0" text-anchor="middle">Raspberry Pi</text><text class="sub" x="430.0" y="166.0" text-anchor="middle">Tracker Pilot</text>
+<rect x="330" y="100" width="200" height="100" rx="14" fill="#171b21" stroke="#5b8ff0" stroke-width="1.6"/><text x="430.0" y="146.0" text-anchor="middle">Raspberry Pi</text><text class="sub" x="430.0" y="166.0" text-anchor="middle">Tracker Pilot</text>
 <rect x="680" y="20" width="200" height="74" rx="14" fill="#171b21" stroke="#3a4250" stroke-width="1.6"/><text x="780.0" y="53.0" text-anchor="middle">Tracker</text><text class="sub" x="780.0" y="73.0" text-anchor="middle">ST-4 guide port</text>
 <rect x="680" y="124" width="200" height="74" rx="14" fill="#171b21" stroke="#3a4250" stroke-width="1.6"/><text x="780.0" y="157.0" text-anchor="middle">Canon camera</text><text class="sub" x="780.0" y="177.0" text-anchor="middle">USB, Bulb</text>
 <rect x="680" y="226" width="200" height="64" rx="14" fill="#171b21" stroke="#3a4250" stroke-width="1.6" stroke-dasharray="6 5"/><text x="780.0" y="254.0" text-anchor="middle">DEC motor</text><text class="sub" x="780.0" y="274.0" text-anchor="middle">optional</text>
-<path d="M190 150L328 150" stroke="#9cc24a" stroke-width="2" fill="none" marker-end="url(#ah)"/><text class="link" x="259" y="140" text-anchor="middle">WiFi</text><text class="sub" x="259" y="172" text-anchor="middle">home or its own</text>
-<path d="M530 130L678 62" stroke="#9cc24a" stroke-width="2" fill="none" marker-end="url(#ah)"/><text class="link" x="572" y="70" text-anchor="middle">RA (and DEC) pulses</text>
-<path d="M530 155L678 160" stroke="#9cc24a" stroke-width="2" fill="none" marker-end="url(#ah)"/><text class="link" x="604" y="148" text-anchor="middle">USB</text>
-<path d="M530 180L678 256" stroke="#9cc24a" stroke-width="2" fill="none" stroke-dasharray="6 5" marker-end="url(#ah)"/><text class="link" x="584" y="246" text-anchor="middle">stepper</text>
+<path d="M190 150L328 150" stroke="#5b8ff0" stroke-width="2" fill="none" marker-end="url(#ah)"/><text class="link" x="259" y="140" text-anchor="middle">WiFi</text><text class="sub" x="259" y="172" text-anchor="middle">home or its own</text>
+<path d="M530 130L678 62" stroke="#5b8ff0" stroke-width="2" fill="none" marker-end="url(#ah)"/><text class="link" x="572" y="70" text-anchor="middle">RA (and DEC) pulses</text>
+<path d="M530 155L678 160" stroke="#5b8ff0" stroke-width="2" fill="none" marker-end="url(#ah)"/><text class="link" x="604" y="148" text-anchor="middle">USB</text>
+<path d="M530 180L678 256" stroke="#5b8ff0" stroke-width="2" fill="none" stroke-dasharray="6 5" marker-end="url(#ah)"/><text class="link" x="584" y="246" text-anchor="middle">stepper</text>
 </svg></div>
   <p class="cap">How it connects: the phone talks to the Pi over WiFi, at home or on the Pi's own network in the field.</p>
 </div>
