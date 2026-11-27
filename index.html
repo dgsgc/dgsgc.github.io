@@ -166,6 +166,17 @@ footer a { color: var(--text2); }
 .tool .pic.phones img { width: 42%; height: auto; aspect-ratio: 600 / 880; object-fit: cover; object-position: top; border-radius: 12px 12px 0 0;
   border: 1px solid #2f3742; border-bottom: 0; box-shadow: 0 10px 30px rgba(0,0,0,.45); transition: transform .4s ease; }
 .tool:hover .pic.phones img { transform: translateY(-3px); }
+
+/* the three tools by their short names */
+.trio { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 26px 0 4px; }
+.acro { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text); }
+.acro svg { width: 30px; height: 30px; flex: none; }
+.acro b { display: block; font-size: 26px; letter-spacing: .06em; line-height: 1; color: var(--c); }
+.acro small { display: block; font-size: 13.5px; color: var(--text2); margin-top: 4px; }
+.acro:hover small { color: var(--text); }
+.acr { margin-left: auto; font-size: 12.5px; font-weight: 800; letter-spacing: .08em; color: var(--c); border: 1px solid color-mix(in srgb, var(--c) 55%, transparent);
+  background: color-mix(in srgb, var(--c) 14%, transparent); border-radius: 999px; padding: 2px 9px; }
+.tool h3 { width: 100%; }
 </style>
 </head>
 <body>
@@ -181,12 +192,13 @@ footer a { color: var(--text2); }
 <div class="wrap hero">
   <h1>Run several rigs<br>without watching every sub.</h1>
   <p class="lead">Free tools for ASIAIR and N.I.N.A. imagers: plan every rig's targets in daylight, then get a tap on the shoulder only when one needs you.</p>
+  <div class="trio"><a class="acro" href="https://dgsgc.github.io/astro-rig-monitor/" style="--c:#4fb06d"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11" fill="none" stroke="#4fb06d" stroke-width="3"/><path d="M16 2v8M16 22v8M2 16h8M22 16h8" stroke="#4fb06d" stroke-width="3"/></svg><span><b>ARM</b><small>Astro Rig Monitor</small></span></a><a class="acro" href="https://dgsgc.github.io/asiair-mosaic-planner/" style="--c:#3bb3a1"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="6" width="14" height="11" rx="1.5" fill="none" stroke="#3bb3a1" stroke-width="2.6"/><rect x="14" y="15" width="14" height="11" rx="1.5" fill="none" stroke="#3bb3a1" stroke-width="2.6"/></svg><span><b>AMP</b><small>ASIAIR Mosaic Planner</small></span></a><a class="acro" href="https://dgsgc.github.io/star-tracker-controller/" style="--c:#5b8ff0"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="12" width="20" height="14" rx="3" fill="none" stroke="#5b8ff0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="19" r="4" fill="none" stroke="#5b8ff0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12l2-3h6l2 3" fill="none" stroke="#5b8ff0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 2.2l1.06 2.74 2.74 1.06-2.74 1.06-1.06 2.74-1.06-2.74-2.74-1.06 2.74-1.06z" fill="#5b8ff0"/></svg><span><b>STC</b><small>Star Tracker Controller</small></span></a></div>
 
   <div class="tools">
     <article class="tool rig">
       <a class="pic" href="https://dgsgc.github.io/astro-rig-monitor/"><img src="img/rig-monitor.jpg" width="1600" height="1000" alt="Astro Rig Monitor showing four rigs: two guiding well, one in warning, one in alert"></a>
       <div class="body">
-        <h3><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11" fill="none" stroke="#4fb06d" stroke-width="3"/><path d="M16 2v8M16 22v8M2 16h8M22 16h8" stroke="#4fb06d" stroke-width="3"/></svg>Astro Rig Monitor</h3>
+        <h3><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11" fill="none" stroke="#4fb06d" stroke-width="3"/><path d="M16 2v8M16 22v8M2 16h8M22 16h8" stroke="#4fb06d" stroke-width="3"/></svg>Astro Rig Monitor<span class="acr" style="--c:#4fb06d">ARM</span></h3>
         <p class="for">During the night · Mac, Windows, Raspberry Pi</p>
         <p class="what">Every rig's guiding on one screen, on your phone, tablet or computer, and an alert only when something goes wrong: RMS creeping up, star lost, guiding stopped. Read-only, so it can't disturb a running plan.</p>
         <div class="btns"><a class="btn primary" href="https://dgsgc.github.io/astro-rig-monitor/">See Astro Rig Monitor</a><a class="btn" href="https://dgsgc.github.io/astro-rig-monitor/#install">Install</a></div>
@@ -195,7 +207,7 @@ footer a { color: var(--text2); }
     <article class="tool mos">
       <a class="pic" href="https://dgsgc.github.io/asiair-mosaic-planner/"><img src="img/mosaic-planner.jpg" width="1600" height="964" alt="ASIAIR Mosaic Planner with a 2×2 mosaic of the North America and Pelican nebulae"></a>
       <div class="body">
-        <h3><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="6" width="14" height="11" rx="1.5" fill="none" stroke="#3bb3a1" stroke-width="2.6"/><rect x="14" y="15" width="14" height="11" rx="1.5" fill="none" stroke="#3bb3a1" stroke-width="2.6"/></svg>ASIAIR Mosaic Planner</h3>
+        <h3><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="6" width="14" height="11" rx="1.5" fill="none" stroke="#3bb3a1" stroke-width="2.6"/><rect x="14" y="15" width="14" height="11" rx="1.5" fill="none" stroke="#3bb3a1" stroke-width="2.6"/></svg>ASIAIR Mosaic Planner<span class="acr" style="--c:#3bb3a1">AMP</span></h3>
         <p class="for">Before the night · in your browser, or as a Mac app</p>
         <p class="what">Frame targets and mosaics on real sky images for every rig side by side, add the exposures, and send the plans to the ASIAIR app instead of typing them in panel by panel.</p>
         <div class="btns"><a class="btn primary" href="https://dgsgc.github.io/asiair-mosaic-planner/">See the Mosaic Planner</a><a class="btn" href="https://dgsgc.github.io/asiair-mosaic-planner/app/">Open the planner</a></div>
@@ -204,7 +216,7 @@ footer a { color: var(--text2); }
     <article class="tool tp">
       <a class="pic art phones" href="https://dgsgc.github.io/star-tracker-controller/" aria-label="Star Tracker Controller"><img src="img/star-tracker-run.jpg" width="600" height="1298" alt="Star Tracker Controller on a phone: a run in progress with dithers" loading="lazy"><img src="img/star-tracker-polar.jpg" width="600" height="1298" alt="Star Tracker Controller on a phone: polar alignment" loading="lazy"></a>
       <div class="body">
-        <h3><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="12" width="20" height="14" rx="3" fill="none" stroke="#5b8ff0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="19" r="4" fill="none" stroke="#5b8ff0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12l2-3h6l2 3" fill="none" stroke="#5b8ff0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 2.2l1.06 2.74 2.74 1.06-2.74 1.06-1.06 2.74-1.06-2.74-2.74-1.06 2.74-1.06z" fill="#5b8ff0"/></svg>Star Tracker Controller</h3>
+        <h3><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="12" width="20" height="14" rx="3" fill="none" stroke="#5b8ff0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="19" r="4" fill="none" stroke="#5b8ff0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12l2-3h6l2 3" fill="none" stroke="#5b8ff0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 2.2l1.06 2.74 2.74 1.06-2.74 1.06-1.06 2.74-1.06-2.74-2.74-1.06 2.74-1.06z" fill="#5b8ff0"/></svg>Star Tracker Controller<span class="acr" style="--c:#5b8ff0">STC</span></h3>
         <p class="for">At the mount · Raspberry Pi, run from your phone</p>
         <p class="what">For star trackers with an ST-4 port: Bulb runs with your camera, dithering, plate-solved polar alignment and mosaic push-to, with no laptop in the field. An extra rig next to your ASIAIRs, watched by the monitor.</p>
         <div class="btns"><a class="btn primary" href="https://dgsgc.github.io/star-tracker-controller/">See the controller</a><a class="btn" href="https://github.com/dgsgc/star-tracker-controller">GitHub</a></div>
@@ -217,9 +229,9 @@ footer a { color: var(--text2); }
   <div class="wrap">
     <h2>How they fit into a night</h2>
     <ol class="steps three">
-      <li><h3>Afternoon: plan</h3><p>Frame each rig's targets and mosaics on the real sky in the <a href="https://dgsgc.github.io/asiair-mosaic-planner/">Mosaic Planner</a>, add the exposures, and send the plans to the ASIAIR app.</p></li>
-      <li><h3>Night: leave them to it</h3><p><a href="https://dgsgc.github.io/astro-rig-monitor/">Astro Rig Monitor</a> watches every rig's guiding and alerts your phone only when one needs you. A star tracker can join in with <a href="https://dgsgc.github.io/star-tracker-controller/">Star Tracker Controller</a> running it.</p></li>
-      <li><h3>Morning: see how it went</h3><p>A one-page report for each night: every rig's guiding through the night, every alert, and why each pause happened.</p></li>
+      <li><h3>Afternoon: plan with AMP</h3><p>Frame each rig's targets and mosaics on the real sky in the <a href="https://dgsgc.github.io/asiair-mosaic-planner/">Mosaic Planner</a>, add the exposures, and send the plans to the ASIAIR app.</p></li>
+      <li><h3>Night: ARM watches, STC runs the tracker</h3><p><a href="https://dgsgc.github.io/astro-rig-monitor/">Astro Rig Monitor</a> watches every rig's guiding and alerts your phone only when one needs you. A star tracker can join in with <a href="https://dgsgc.github.io/star-tracker-controller/">Star Tracker Controller</a> running it.</p></li>
+      <li><h3>Morning: ARM's report</h3><p>A one-page report for each night: every rig's guiding through the night, every alert, and why each pause happened.</p></li>
     </ol>
   </div>
 </section>
