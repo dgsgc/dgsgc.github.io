@@ -209,8 +209,10 @@ header .brand b { display: block; font-size: 32px; line-height: 1.05; letter-spa
 header .brand small { display: block; font-size: 15px; font-weight: 600; letter-spacing: .08em; color: var(--text2); margin-top: 6px; }
 header { padding: 26px 0 30px; }
 @media (max-width: 520px) { header .brand { gap: 12px; } header .brand svg { width: 42px; height: 42px; } header .brand b { font-size: 24px; } header .brand small { font-size: 13px; } }
-footer .foot-brand { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 6px; font-weight: 600; font-size: 17px; color: #c9d1ff; text-decoration: none; }
+footer .foot-brand { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 6px; font-weight: 600; font-size: 17px; color: var(--c, #c9d1ff); text-decoration: none; }
 footer .foot-brand svg { width: 30px; height: 30px; flex: none; }
+footer a.ti { display: inline-flex; align-items: center; gap: 6px; vertical-align: bottom; }
+footer a.ti svg { width: 17px; height: 17px; flex: none; }
 /* Phone menu */
 .menu-btn { display: none; }
 .menu-btn .x { display: none; }
@@ -303,7 +305,7 @@ footer .foot-brand svg { width: 30px; height: 30px; flex: none; }
   <div class="wrap">
     <a class="foot-brand" href="#"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 24L14 9L26 20" fill="none" stroke="#c9d1ff" stroke-width="1.6" stroke-opacity=".55"/><circle cx="14" cy="9" r="6.2" fill="none" stroke="#4fb06d" stroke-width="1.6"/><path d="M14 1v3.2M14 13.8V17M6 9h3.2M18.8 9H22" stroke="#4fb06d" stroke-width="1.6"/><circle cx="6" cy="24" r="3.2" fill="#3bb3a1"/><circle cx="14" cy="9" r="2.4" fill="#c9d1ff"/><circle cx="26" cy="20" r="3.2" fill="#5b8ff0"/></svg>Astro imaging tools</a>
     <p>Free, with the source on GitHub. These tools aren't made by or connected with ZWO or the N.I.N.A. and PHD2 projects.</p>
-    <p><a href="https://github.com/dgsgc/astro-rig-monitor">Astro Rig Monitor on GitHub</a> · <a href="https://github.com/dgsgc/asiair-mosaic-planner">ASIAIR Mosaic Planner on GitHub</a> · <a href="https://github.com/dgsgc/star-tracker-controller">Star Tracker Controller on GitHub</a></p>
+    <p><a class="ti" href="https://github.com/dgsgc/astro-rig-monitor"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11" fill="none" stroke="#4fb06d" stroke-width="3"/><path d="M16 2v8M16 22v8M2 16h8M22 16h8" stroke="#4fb06d" stroke-width="3"/></svg>Astro Rig Monitor on GitHub</a> · <a class="ti" href="https://github.com/dgsgc/asiair-mosaic-planner"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="6" width="14" height="11" rx="1.5" fill="none" stroke="#3bb3a1" stroke-width="2.6"/><rect x="14" y="15" width="14" height="11" rx="1.5" fill="none" stroke="#3bb3a1" stroke-width="2.6"/></svg>ASIAIR Mosaic Planner on GitHub</a> · <a class="ti" href="https://github.com/dgsgc/star-tracker-controller"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="12" width="20" height="14" rx="3" fill="none" stroke="#5b8ff0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="19" r="4" fill="none" stroke="#5b8ff0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12l2-3h6l2 3" fill="none" stroke="#5b8ff0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.5 2.2l1.06 2.74 2.74 1.06-2.74 1.06-1.06 2.74-1.06-2.74-2.74-1.06 2.74-1.06z" fill="#5b8ff0"/></svg>Star Tracker Controller on GitHub</a></p>
   </div>
 </footer>
 <script>
