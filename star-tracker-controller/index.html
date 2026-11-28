@@ -286,7 +286,7 @@ header .wrap { min-height: 72px; }
     <h3 style="margin-top:30px">DEC dithering: three ways</h3>
     <table class="spec">
       <tr><td>None (default)</td><td>For trackers that guide only RA (Star Adventurer 2i, SkyGuider Pro): RA dithers.</td></tr>
-      <tr><td>ST-4 port</td><td>For mounts that guide DEC too (Star Adventurer GTi): RA and DEC, with two more optocouplers.</td></tr>
+      <tr><td>ST-4 port</td><td>For mounts that guide DEC too (Star Adventurer GTi): RA and DEC, with the soldered build's two extra optocouplers (see the hardware guide).</td></tr>
       <tr><td>Stepper motor</td><td>For a manual DEC axis: a small motor and belt on its slow-motion gives RA and DEC.</td></tr>
     </table>
   </div>
@@ -295,11 +295,9 @@ header .wrap { min-height: 72px; }
 <section id="build">
   <div class="wrap">
     <h2>Build it</h2>
-    <p class="muted">About £35 of parts with a Pi Zero 2 W. Three ways to connect the Pi to the tracker's ST-4 port: order the ready-made ST-4 board, solder the ST-4 lead yourself, or build it with no soldering from a ready-made optocoupler module (untested so far). Click a drawing to see it large; the <a href="https://github.com/dgsgc/star-tracker-controller/blob/main/docs/hardware.md">hardware guide</a> has the parts list and the same drawings.</p>
-    <figure class="diag"><a class="zoom" href="img/st4-board.jpg"><img src="img/st4-board.jpg" width="1200" height="753" alt="The ST-4 board: a Pi Zero-sized board with four optocouplers, an RJ12 socket and a 6-pin stepper header, which plugs onto the Pi's 40-pin header" loading="lazy"></a><figcaption>Easiest: the <a href="https://github.com/dgsgc/star-tracker-controller/tree/main/hardware/st4-board">ST-4 board</a>. It plugs onto the Pi's header and takes a normal ST-4 lead, so there's no wiring to get wrong. The files to order it from JLCPCB are on GitHub: about £13 for 5 boards with the small parts fitted (you solder three connectors), or with everything fitted for more. The first boards are being made and tested now.</figcaption></figure>
+    <p class="muted">About £35 of parts with a Pi Zero 2 WH. Nothing to solder: a relay board plugs onto the Pi, three short wires go to an RJ12 socket, and a normal ST-4 lead goes from there to the tracker. The relays connect the guide lines the way the buttons on a hand controller do, and the Pi and the mount share nothing electrically. This build is being tested now. Click a drawing to see it large; the <a href="https://github.com/dgsgc/star-tracker-controller/blob/main/docs/hardware.md">hardware guide</a> has the parts list, and a soldered version for anyone who prefers it.</p>
     <figure class="diag"><a class="zoom" href="img/setup.svg"><img src="img/setup.svg" width="1120" height="640" alt="Overview of a complete rig: tracker, Raspberry Pi, power, ST-4 lead, USB to the camera, and the phone on WiFi" loading="lazy"></a><figcaption>The whole rig: how the tracker, Pi, power, camera and phone connect.</figcaption></figure>
-    <figure class="diag"><a class="zoom" href="img/wiring.svg"><img src="img/wiring.svg" width="1120" height="940" alt="Wiring from the Pi's header through 330 ohm resistors and PC817 optocouplers to the ST-4 plug, with the optional DEC channels and stepper" loading="lazy"></a><figcaption>The ST-4 lead: Pi pins, resistors and optocouplers to the plug, with the optional DEC channels and stepper. Check with a meter before plugging in: about 3–5 V between each guide line and common. Settings › <b>Test ST-4 outputs</b> then switches each line on for 2 seconds, so you can check every channel.</figcaption></figure>
-    <figure class="diag"><a class="zoom" href="img/nosolder.svg"><img src="img/nosolder.svg" width="1120" height="800" alt="No-solder build: a 4-channel PC817 optocoupler module with a high-level trigger, an RJ12 breakout and jumper wires" loading="lazy"></a><figcaption>No soldering needed (untested): a ready-made 4-channel PC817 board with a "high-level trigger", an RJ12 breakout and jumper wires. Nobody has confirmed a board yet, so please report back if you try one.</figcaption></figure>
+    <figure class="diag"><a class="zoom" href="img/nosolder.svg"><img src="img/nosolder.svg" width="1120" height="860" alt="No-solder build: a Zero Relay board on the Pi, three wires to an RJ12 socket breakout, and an ST-4 lead to the mount" loading="lazy"></a><figcaption>The build: an SB Components Zero Relay board (with its tall stacking header) on the Pi, relay 1 to RA+, relay 2 to RA−, both commons to common on an RJ12 socket breakout, then any 6-wire straight-through ST-4 lead. In Settings choose <b>Zero Relay board</b>; <b>Test ST-4 outputs</b> clicks each relay for 2 seconds, and if dithers go the wrong way, <b>RA direction</b> swaps them. A DEC motor's wires go on the pins on top of the relay board.</figcaption></figure>
     <figure class="diag"><a class="zoom" href="img/checklist.svg"><img src="img/checklist.svg" width="1120" height="470" alt="Checklist for the camera and the tracker before a night" loading="lazy"></a><figcaption>Before a night: the camera and tracker settings that matter.</figcaption></figure>
   </div>
 </section>
@@ -308,9 +306,9 @@ header .wrap { min-height: 72px; }
   <div class="wrap">
     <h2>Getting started</h2>
     <ol class="steps">
-      <li><h3>Connect to the ST-4 port</h3><p>Order the ST-4 board, or make the lead: optocouplers and resistors between the Pi and an ST-4 cable, so the Pi and the mount share nothing electrically. See <a href="#build">Build it</a> above.</p></li>
+      <li><h3>Connect to the ST-4 port</h3><p>Push the relay board onto the Pi, connect three wires to the RJ12 socket, and plug an ST-4 lead into the tracker. See <a href="#build">Build it</a> above.</p></li>
       <li><h3>Install it on the Pi</h3><p>Put Raspberry Pi OS Lite (64-bit) on a card with your home WiFi and SSH, then run the one-line installer below.</p></li>
-      <li><h3>Set it up from your phone</h3><p>Open <b>http://tracker.local</b> (your Pi's name) and enter the focal length, the camera's pixel size and width, the guide rate, the DEC drive and your location.</p></li>
+      <li><h3>Set it up from your phone</h3><p>Open <b>http://tracker.local</b> (your Pi's name) and enter the focal length, the camera's pixel size and width, the guide rate, the ST-4 outputs, the DEC drive and your location.</p></li>
       <li><h3>First night</h3><p>Camera dial on <b>B</b> (or <b>M</b> if it has no B), lens on <b>MF</b>. Polar align with the Polar alignment card, focus, then press <b>Start</b>, or load a mosaic.</p></li>
     </ol>
     <div class="cmd"><pre><code id="cmd">curl -fsSL https://raw.githubusercontent.com/dgsgc/star-tracker-controller/main/install.sh | sh</code></pre><button class="copy" type="button" id="copy">Copy</button></div>

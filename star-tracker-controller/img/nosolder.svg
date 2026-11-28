@@ -1,114 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 800" width="1120" height="800" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
-<title>Star Tracker Controller: no-solder wiring (mockup)</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 860" width="1120" height="860" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title>Star Tracker Controller: no-solder build with a relay board</title>
 <rect width="100%" height="100%" fill="#0f1216"/>
-<text x="40" y="46" font-size="24" fill="#e6e9ee" font-weight="700" text-anchor="start">No-solder build: Pi → 4-channel opto module → RJ12 breakout</text>
-<text x="40" y="72" font-size="14" fill="#e0a050" font-weight="400" text-anchor="start">The same circuit as the soldered build, from two ready-made boards and jumper wires. Not yet tested with a particular module.</text>
-<rect x="40" y="110" width="260" height="330" rx="12" fill="#171b21" stroke="#2a3038" stroke-width="1.5"/>
-<text x="56" y="138" font-size="16" fill="#5b8ff0" font-weight="700" text-anchor="start">Raspberry Pi</text>
-<text x="56" y="158" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="start">header pins used</text>
-<circle cx="270" cy="192" r="6" fill="#5b8ff0" stroke="none" stroke-width="1.5"/>
-<text x="56" y="196" font-size="14" fill="#5b8ff0" font-weight="700" text-anchor="start">pin 11</text>
-<text x="120" y="196" font-size="13" fill="#a9b2bf" font-weight="400" text-anchor="start">GPIO17</text>
-<text x="190" y="196" font-size="13" fill="#5b8ff0" font-weight="400" text-anchor="start">RA+</text>
-<circle cx="270" cy="240" r="6" fill="#5b8ff0" stroke="none" stroke-width="1.5"/>
-<text x="56" y="244" font-size="14" fill="#5b8ff0" font-weight="700" text-anchor="start">pin 13</text>
-<text x="120" y="244" font-size="13" fill="#a9b2bf" font-weight="400" text-anchor="start">GPIO27</text>
-<text x="190" y="244" font-size="13" fill="#5b8ff0" font-weight="400" text-anchor="start">RA−</text>
-<circle cx="270" cy="288" r="6" fill="#e6e9ee" stroke="none" stroke-width="1.5"/>
-<text x="56" y="292" font-size="14" fill="#e6e9ee" font-weight="700" text-anchor="start">pin 15</text>
-<text x="120" y="292" font-size="13" fill="#a9b2bf" font-weight="400" text-anchor="start">GPIO22</text>
-<text x="190" y="292" font-size="13" fill="#e6e9ee" font-weight="400" text-anchor="start">DEC+</text>
-<circle cx="270" cy="336" r="6" fill="#e6e9ee" stroke="none" stroke-width="1.5"/>
-<text x="56" y="340" font-size="14" fill="#e6e9ee" font-weight="700" text-anchor="start">pin 29</text>
-<text x="120" y="340" font-size="13" fill="#a9b2bf" font-weight="400" text-anchor="start">GPIO5</text>
-<text x="190" y="340" font-size="13" fill="#e6e9ee" font-weight="400" text-anchor="start">DEC−</text>
-<circle cx="270" cy="384" r="6" fill="#a9b2bf" stroke="none" stroke-width="1.5"/>
-<text x="56" y="388" font-size="14" fill="#a9b2bf" font-weight="700" text-anchor="start">pin 9</text>
-<text x="120" y="388" font-size="13" fill="#a9b2bf" font-weight="400" text-anchor="start">GND</text>
-<text x="190" y="388" font-size="13" fill="#a9b2bf" font-weight="400" text-anchor="start">GND</text>
-<text x="56" y="428" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="start">DEC+ / DEC− only with DEC drive “ST-4 port”</text>
-<rect x="430" y="110" width="300" height="330" rx="12" fill="#1b2a44" stroke="#3b5a8f" stroke-width="1.5"/>
-<text x="580" y="138" font-size="15" fill="#e6e9ee" font-weight="700" text-anchor="middle">4-channel PC817 module</text>
-<text x="580" y="156" font-size="11" fill="#e0a050" font-weight="400" text-anchor="middle">“high-level trigger”, 3.3 V input</text>
-<circle cx="430" cy="192" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
-<text x="444" y="196" font-size="13" fill="#e6e9ee" font-weight="400" text-anchor="start">IN1</text>
-<circle cx="730" cy="192" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
-<text x="716" y="196" font-size="13" fill="#e6e9ee" font-weight="400" text-anchor="end">OUT1</text>
-<circle cx="430" cy="240" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
-<text x="444" y="244" font-size="13" fill="#e6e9ee" font-weight="400" text-anchor="start">IN2</text>
-<circle cx="730" cy="240" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
-<text x="716" y="244" font-size="13" fill="#e6e9ee" font-weight="400" text-anchor="end">OUT2</text>
-<circle cx="430" cy="288" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
-<text x="444" y="292" font-size="13" fill="#e6e9ee" font-weight="400" text-anchor="start">IN3</text>
-<circle cx="730" cy="288" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
-<text x="716" y="292" font-size="13" fill="#e6e9ee" font-weight="400" text-anchor="end">OUT3</text>
-<circle cx="430" cy="336" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
-<text x="444" y="340" font-size="13" fill="#e6e9ee" font-weight="400" text-anchor="start">IN4</text>
-<circle cx="730" cy="336" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
-<text x="716" y="340" font-size="13" fill="#e6e9ee" font-weight="400" text-anchor="end">OUT4</text>
-<circle cx="430" cy="384" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
-<text x="444" y="388" font-size="13" fill="#e6e9ee" font-weight="400" text-anchor="start">GND (G)</text>
-<circle cx="730" cy="384" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
-<text x="716" y="388" font-size="13" fill="#e6e9ee" font-weight="400" text-anchor="end">G2 (output ground)</text>
-<rect x="550" y="178" width="60" height="26" rx="3" fill="#20252d" stroke="#a9b2bf" stroke-width="1.5"/>
-<text x="580" y="196" font-size="10" fill="#a9b2bf" font-weight="400" text-anchor="middle">PC817</text>
-<rect x="550" y="226" width="60" height="26" rx="3" fill="#20252d" stroke="#a9b2bf" stroke-width="1.5"/>
-<text x="580" y="244" font-size="10" fill="#a9b2bf" font-weight="400" text-anchor="middle">PC817</text>
-<rect x="550" y="274" width="60" height="26" rx="3" fill="#20252d" stroke="#a9b2bf" stroke-width="1.5"/>
-<text x="580" y="292" font-size="10" fill="#a9b2bf" font-weight="400" text-anchor="middle">PC817</text>
-<rect x="550" y="322" width="60" height="26" rx="3" fill="#20252d" stroke="#a9b2bf" stroke-width="1.5"/>
-<text x="580" y="340" font-size="10" fill="#a9b2bf" font-weight="400" text-anchor="middle">PC817</text>
-<text x="580" y="428" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="middle">leave V1 / V2 unconnected if it has them</text>
-<polyline points="276,192 424,192" fill="none" stroke="#5b8ff0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="276,240 424,240" fill="none" stroke="#5b8ff0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="276,288 424,288" fill="none" stroke="#e6e9ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
-<polyline points="276,336 424,336" fill="none" stroke="#e6e9ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
-<polyline points="276,384 424,384" fill="none" stroke="#a9b2bf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="365" y="160" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="middle">jumper wires</text>
-<text x="365" y="174" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="middle">(female–female)</text>
-<rect x="870" y="110" width="210" height="330" rx="12" fill="#171b21" stroke="#2a3038" stroke-width="1.5"/>
-<text x="975" y="138" font-size="15" fill="#e6e9ee" font-weight="700" text-anchor="middle">RJ12 breakout</text>
-<text x="975" y="156" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="middle">ST-4 lead plugs in here</text>
-<circle cx="870" cy="192" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
-<text x="886" y="196" font-size="14" fill="#5b8ff0" font-weight="700" text-anchor="start">pin 3</text>
-<text x="946" y="196" font-size="13" fill="#5b8ff0" font-weight="400" text-anchor="start">RA+</text>
-<circle cx="870" cy="240" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
-<text x="886" y="244" font-size="14" fill="#5b8ff0" font-weight="700" text-anchor="start">pin 6</text>
-<text x="946" y="244" font-size="13" fill="#5b8ff0" font-weight="400" text-anchor="start">RA−</text>
-<circle cx="870" cy="288" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
-<text x="886" y="292" font-size="14" fill="#e6e9ee" font-weight="700" text-anchor="start">pin 4</text>
-<text x="946" y="292" font-size="13" fill="#e6e9ee" font-weight="400" text-anchor="start">DEC+</text>
-<circle cx="870" cy="336" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
-<text x="886" y="340" font-size="14" fill="#e6e9ee" font-weight="700" text-anchor="start">pin 5</text>
-<text x="946" y="340" font-size="13" fill="#e6e9ee" font-weight="400" text-anchor="start">DEC−</text>
-<circle cx="870" cy="384" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
-<text x="886" y="388" font-size="14" fill="#e6e9ee" font-weight="700" text-anchor="start">pin 2</text>
-<text x="946" y="388" font-size="13" fill="#e6e9ee" font-weight="400" text-anchor="start">common</text>
-<text x="886" y="410" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="start">pin 1: unused</text>
-<text x="886" y="426" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="start">breakout labels may differ: meter</text>
-<polyline points="736,192 864,192" fill="none" stroke="#5b8ff0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="736,240 864,240" fill="none" stroke="#5b8ff0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="736,288 864,288" fill="none" stroke="#e6e9ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
-<polyline points="736,336 864,336" fill="none" stroke="#e6e9ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
-<polyline points="736,384 864,384" fill="none" stroke="#a9b2bf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="40" y="470" width="1040" height="300" rx="12" fill="#171b21" stroke="#2a3038" stroke-width="1.5"/>
-<text x="60" y="500" font-size="16" fill="#e6e9ee" font-weight="700" text-anchor="start">Build and test (about 15 minutes, nothing to solder)</text>
-<circle cx="72" cy="535" r="11" fill="#5b8ff0" stroke="none" stroke-width="1.5"/>
-<text x="72" y="540" font-size="12" fill="#0b0e12" font-weight="700" text-anchor="middle">1</text>
-<text x="96" y="540" font-size="14" fill="#e6e9ee" font-weight="400" text-anchor="start">Buy a “high-level trigger” module (a high input switches it on). A low-level-trigger module would hold</text>
-<text x="96" y="562" font-size="14" fill="#a9b2bf" font-weight="400" text-anchor="start">the guide lines on while the Pi is idle, so the mount would drift: don't use one.</text>
-<circle cx="72" cy="593" r="11" fill="#5b8ff0" stroke="none" stroke-width="1.5"/>
-<text x="72" y="598" font-size="12" fill="#0b0e12" font-weight="700" text-anchor="middle">2</text>
-<text x="96" y="598" font-size="14" fill="#e6e9ee" font-weight="400" text-anchor="start">Wire the Pi to the module's IN1–IN4 and GND, and OUT1–OUT4 and G2 to the breakout, as drawn.</text>
-<circle cx="72" cy="629" r="11" fill="#5b8ff0" stroke="none" stroke-width="1.5"/>
-<text x="72" y="634" font-size="12" fill="#0b0e12" font-weight="700" text-anchor="middle">3</text>
-<text x="96" y="634" font-size="14" fill="#e6e9ee" font-weight="400" text-anchor="start">Meter check, Pi off: mount on, ST-4 lead in the breakout: about 3–5 V between each guide pin and common.</text>
-<circle cx="72" cy="665" r="11" fill="#5b8ff0" stroke="none" stroke-width="1.5"/>
-<text x="72" y="670" font-size="12" fill="#0b0e12" font-weight="700" text-anchor="middle">4</text>
-<text x="96" y="670" font-size="14" fill="#e6e9ee" font-weight="400" text-anchor="start">Input check: Settings › Test ST-4 outputs switches each line on for 2 s; the meter</text>
-<text x="96" y="692" font-size="14" fill="#a9b2bf" font-weight="400" text-anchor="start">on that guide pin should drop to near 0 V. If it doesn't, the module needs 5 V inputs: it won't work.</text>
-<circle cx="72" cy="723" r="11" fill="#5b8ff0" stroke="none" stroke-width="1.5"/>
-<text x="72" y="728" font-size="12" fill="#0b0e12" font-weight="700" text-anchor="middle">5</text>
-<text x="96" y="728" font-size="14" fill="#e6e9ee" font-weight="400" text-anchor="start">Take a frame, dither, take another: if the stars moved the wrong way, swap RA+ and RA− at the breakout.</text>
-<text x="96" y="750" font-size="14" fill="#a9b2bf" font-weight="400" text-anchor="start">Report the module that worked (a link or photo), so it can be listed for others.</text>
+<text x="40" y="46" font-size="24" fill="#e6e9ee" font-weight="700" text-anchor="start">No-solder build: Pi → relay board → RJ12 socket → ST-4 lead</text>
+<text x="40" y="72" font-size="14" fill="#e0a050" font-weight="400" text-anchor="start">Nothing to solder, no breadboard. Being tested: the first board is on order.</text>
+<rect x="40" y="360" width="360" height="70" rx="12" fill="#16301f" stroke="#2f6b45" stroke-width="1.5"/>
+<text x="220" y="402" font-size="14" fill="#e6e9ee" font-weight="700" text-anchor="middle">Raspberry Pi Zero 2 WH (with header)</text>
+<rect x="80" y="324" width="280" height="36" rx="4" fill="#20252d" stroke="#a9b2bf" stroke-width="1.5"/>
+<text x="220" y="347" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="middle">40-pin socket pushes onto the Pi's header</text>
+<rect x="40" y="110" width="360" height="214" rx="12" fill="#1b2a44" stroke="#3b5a8f" stroke-width="1.5"/>
+<text x="56" y="138" font-size="15" fill="#e6e9ee" font-weight="700" text-anchor="start">Zero Relay board (SB Components)</text>
+<text x="56" y="156" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="start">stacking header: all 40 pins stand above the board</text>
+<rect x="56" y="184" width="120" height="48" rx="4" fill="#20252d" stroke="#a9b2bf" stroke-width="1.5"/>
+<text x="116" y="206" font-size="13" fill="#e6e9ee" font-weight="700" text-anchor="middle">Relay 1</text>
+<text x="116" y="222" font-size="10" fill="#a9b2bf" font-weight="400" text-anchor="middle">GPIO22, pin 15</text>
+<circle cx="400" cy="188" r="5" fill="#d4a944" stroke="none" stroke-width="1.5"/>
+<text x="386" y="192" font-size="11" fill="#e6e9ee" font-weight="400" text-anchor="end">NO</text>
+<circle cx="400" cy="204" r="5" fill="#d4a944" stroke="none" stroke-width="1.5"/>
+<text x="386" y="208" font-size="11" fill="#e6e9ee" font-weight="400" text-anchor="end">COM</text>
+<circle cx="400" cy="220" r="5" fill="#2a3038" stroke="none" stroke-width="1.5"/>
+<text x="386" y="224" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="end">NC</text>
+<rect x="56" y="248" width="120" height="48" rx="4" fill="#20252d" stroke="#a9b2bf" stroke-width="1.5"/>
+<text x="116" y="270" font-size="13" fill="#e6e9ee" font-weight="700" text-anchor="middle">Relay 2</text>
+<text x="116" y="286" font-size="10" fill="#a9b2bf" font-weight="400" text-anchor="middle">GPIO5, pin 29</text>
+<circle cx="400" cy="252" r="5" fill="#d4a944" stroke="none" stroke-width="1.5"/>
+<text x="386" y="256" font-size="11" fill="#e6e9ee" font-weight="400" text-anchor="end">NO</text>
+<circle cx="400" cy="268" r="5" fill="#d4a944" stroke="none" stroke-width="1.5"/>
+<text x="386" y="272" font-size="11" fill="#e6e9ee" font-weight="400" text-anchor="end">COM</text>
+<circle cx="400" cy="284" r="5" fill="#2a3038" stroke="none" stroke-width="1.5"/>
+<text x="386" y="288" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="end">NC</text>
+<text x="56" y="312" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="start">leave its small jumpers on</text>
+<rect x="760" y="110" width="320" height="214" rx="12" fill="#171b21" stroke="#2a3038" stroke-width="1.5"/>
+<text x="920" y="138" font-size="15" fill="#e6e9ee" font-weight="700" text-anchor="middle">RJ12 6P6C socket breakout</text>
+<text x="920" y="156" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="middle">screw terminals; labels vary. Pins 1, 4, 5 unused</text>
+<circle cx="760" cy="188" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
+<text x="776" y="192" font-size="14" fill="#5b8ff0" font-weight="700" text-anchor="start">RA+</text>
+<text x="870" y="192" font-size="13" fill="#a9b2bf" font-weight="400" text-anchor="start">ST-4 pin 3</text>
+<circle cx="760" cy="252" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
+<text x="776" y="256" font-size="14" fill="#5b8ff0" font-weight="700" text-anchor="start">RA−</text>
+<text x="870" y="256" font-size="13" fill="#a9b2bf" font-weight="400" text-anchor="start">ST-4 pin 6</text>
+<circle cx="760" cy="300" r="6" fill="#d4a944" stroke="none" stroke-width="1.5"/>
+<text x="776" y="304" font-size="14" fill="#e6e9ee" font-weight="700" text-anchor="start">common</text>
+<text x="870" y="304" font-size="13" fill="#a9b2bf" font-weight="400" text-anchor="start">ST-4 pin 2</text>
+<polyline points="406,188 754,188" fill="none" stroke="#5b8ff0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="406,252 754,252" fill="none" stroke="#5b8ff0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="406,204 600,204 600,300 754,300" fill="none" stroke="#e6e9ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="406,268 600,268" fill="none" stroke="#e6e9ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="600" cy="268" r="4.5" fill="#e6e9ee" stroke="none" stroke-width="1.5"/>
+<text x="600" y="410" font-size="12" fill="#a9b2bf" font-weight="400" text-anchor="middle">3 short wires, screw terminals at both ends</text>
+<polyline points="920,324 920,380" fill="none" stroke="#d4a944" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="800" y="380" width="240" height="50" rx="12" fill="#2a2416" stroke="#d4a944" stroke-width="1.5"/>
+<text x="920" y="402" font-size="13" fill="#e6e9ee" font-weight="700" text-anchor="middle">any ST-4 lead to the mount</text>
+<text x="920" y="419" font-size="11" fill="#a9b2bf" font-weight="400" text-anchor="middle">6P6C, straight-through</text>
+<text x="40" y="460" font-size="13" fill="#a9b2bf" font-weight="400" text-anchor="start">DEC stepper (optional): its six jumper wires go on the pins on top of the relay board, at the same pin numbers as on the Pi.</text>
+<rect x="40" y="480" width="1040" height="350" rx="12" fill="#171b21" stroke="#2a3038" stroke-width="1.5"/>
+<text x="60" y="510" font-size="16" fill="#e6e9ee" font-weight="700" text-anchor="start">Build and test (about 15 minutes)</text>
+<circle cx="72" cy="547" r="11" fill="#5b8ff0" stroke="none" stroke-width="1.5"/>
+<text x="72" y="552" font-size="12" fill="#0b0e12" font-weight="700" text-anchor="middle">1</text>
+<text x="96" y="552" font-size="14" fill="#e6e9ee" font-weight="400" text-anchor="start">Push the relay board onto the Pi so it sits over the Pi. Its relays use GPIO22 and GPIO5.</text>
+<circle cx="72" cy="585" r="11" fill="#5b8ff0" stroke="none" stroke-width="1.5"/>
+<text x="72" y="590" font-size="12" fill="#0b0e12" font-weight="700" text-anchor="middle">2</text>
+<text x="96" y="590" font-size="14" fill="#e6e9ee" font-weight="400" text-anchor="start">Wire relay 1 NO to RA+, relay 2 NO to RA−, and both COMs to common on the breakout. Leave NC empty.</text>
+<circle cx="72" cy="623" r="11" fill="#5b8ff0" stroke="none" stroke-width="1.5"/>
+<text x="72" y="628" font-size="12" fill="#0b0e12" font-weight="700" text-anchor="middle">3</text>
+<text x="96" y="628" font-size="14" fill="#e6e9ee" font-weight="400" text-anchor="start">Settings › ST-4 outputs: “Zero Relay board”. Save.</text>
+<circle cx="72" cy="661" r="11" fill="#5b8ff0" stroke="none" stroke-width="1.5"/>
+<text x="72" y="666" font-size="12" fill="#0b0e12" font-weight="700" text-anchor="middle">4</text>
+<text x="96" y="666" font-size="14" fill="#e6e9ee" font-weight="400" text-anchor="start">Plug an ST-4 lead from the breakout to the mount: 6P6C with all six wires, straight-through.</text>
+<text x="96" y="688" font-size="14" fill="#a9b2bf" font-weight="400" text-anchor="start">A 4-wire phone lead (6P4C) looks the same but has no RA− (pin 6).</text>
+<circle cx="72" cy="721" r="11" fill="#5b8ff0" stroke="none" stroke-width="1.5"/>
+<text x="72" y="726" font-size="12" fill="#0b0e12" font-weight="700" text-anchor="middle">5</text>
+<text x="96" y="726" font-size="14" fill="#e6e9ee" font-weight="400" text-anchor="start">Mount on: a meter reads about 3–5 V between RA+ and common, and RA− and common.</text>
+<text x="96" y="748" font-size="14" fill="#a9b2bf" font-weight="400" text-anchor="start">Settings › Test ST-4 outputs: the relay clicks and that line drops to near 0 V for 2 s.</text>
+<circle cx="72" cy="781" r="11" fill="#5b8ff0" stroke="none" stroke-width="1.5"/>
+<text x="72" y="786" font-size="12" fill="#0b0e12" font-weight="700" text-anchor="middle">6</text>
+<text x="96" y="786" font-size="14" fill="#e6e9ee" font-weight="400" text-anchor="start">Take a frame, dither, take another. If the stars moved the wrong way: Settings › RA direction: Reversed.</text>
 </svg>
